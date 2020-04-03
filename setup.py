@@ -1,5 +1,5 @@
 import os
-from setuptools import setup
+from setuptools import find_packages, setup
 
 readme_file = os.path.join(os.path.dirname(__file__), 'README.md')
 with open(readme_file, 'r') as f:
@@ -15,7 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     license='MIT',
-    packages=['dynamic_models'],
+    packages=find_packages(),
     install_requires=[
         'Django>=2.0',
     ],

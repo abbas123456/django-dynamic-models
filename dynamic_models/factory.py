@@ -70,6 +70,7 @@ class ModelFactory:
             app_label = self.schema.app_label
             db_table = self.schema.db_table
             verbose_name = self.schema.name
+            managed = False
         return Meta
 
 

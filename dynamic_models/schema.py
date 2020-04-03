@@ -19,6 +19,7 @@ class ModelSchemaEditor:
 
     def create_table(self, new_model):
         """Create a database table for this model."""
+        return
         with self.editor() as editor:
             editor.create_model(new_model)
 
