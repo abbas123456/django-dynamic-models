@@ -10,18 +10,10 @@ class ModelSchemaEditor:
     def update_table(self, new_model):
         if self.initial_model and self.has_changed(new_model):
             self.alter_table(new_model)
-        elif not self.initial_model:
-            self.create_table(new_model)
         self.initial_model = new_model
 
     def has_changed(self, model):
         return self.initial_model != model
-
-    def create_table(self, new_model):
-        """Create a database table for this model."""
-        return
-        with self.editor() as editor:
-            editor.create_model(new_model)
 
     def alter_table(self, new_model):
         """Change the model's db_table to the currently set name."""
