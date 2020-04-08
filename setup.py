@@ -6,11 +6,11 @@ with open(readme_file, 'r') as f:
     long_description = f.read()
 
 setup(
-    name='django-dynamic-models',
-    version='0.1.0',
-    url='http://github.com/rvinzent/django-dynamic-models',
-    author='Ryan Vinzent',
-    author_email='rvinzent217@hotmail.com',
+    name='django-dynamic-models-readonly',
+    version='0.1.1',
+    url='https://github.com/abbas123456/django-dynamic-models-readonly',
+    author='Mohammad Abbas',
+    author_email='mohammad.abbas86@gmail.com',
     description='Allow dynamic creation and updates to database schema at runtime.',
     long_description=long_description,
     long_description_content_type='text/markdown',
